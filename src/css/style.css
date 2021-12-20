@@ -302,4 +302,53 @@ nav {
   border-radius: 100%;
   cursor: pointer;
 }
+
+.choice {
+  min-height: 896px;
+  position: relative;
+}
+
+.choice_block_black {
+  padding-top: 57px;
+  height: 499px;
+  background-color: #070716;
+}
+
+.choice_car {
+  position: absolute;
+  top: 232px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.choice_block_white {
+  height: 397px;
+  padding-top: 217px;
+  background: url("../img/bg/background_mobile.png") center center/cover no-repeat;
+}
+
+.choice_block_white_descr {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.choice .label {
+  color: #070716;
+  background-color: #ffffff;
+}
+
+.choice .title {
+  margin: 0 auto;
+  margin-top: 25px;
+  color: #ffffff;
+}
+
+.choice .subtitle {
+  margin-top: 5px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
