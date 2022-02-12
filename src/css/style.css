@@ -2,13 +2,21 @@
   font-family: 'Roboto', sans-serif;
 }
 
-nav {
-  height: 51px;
-  background-color: #212121;
-}
-
 .header {
   position: relative;
+  height: 50px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+.hamburger {
+  display: none;
 }
 
 .menu {
@@ -18,12 +26,10 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   padding: 13px 70px;
   margin: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .menu_link {
@@ -32,12 +38,22 @@ nav {
   font-weight: 300;
 }
 
+.menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
 .menu_item {
   border-right: 2px dotted black;
   padding-right: 28px;
 }
 
+.menu_item:last-child {
+  border-right: none;
+}
+
 .subheader {
+  top: 50px;
   position: absolute;
   width: 100%;
   height: 84px;
@@ -565,6 +581,11 @@ nav {
   color: #070716;
 }
 
+.links_ref .block_first a:hover, .links_ref .block_second a:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
 .links_ref .block_second {
   margin-top: 16px;
   color: #999999;
@@ -602,5 +623,376 @@ nav {
 .stors_stor img {
   height: 30px;
   width: 95px;
+}
+
+.xs-visible, .linksMobil {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-size: 13px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .benefits_block .benefit_descr {
+    margin-bottom: 25px;
+    margin-right: 10px;
+    width: 310px;
+  }
+  .mobile_item {
+    width: 305px;
+  }
+  .mobile_pluse {
+    left: 132px;
+  }
+  .stors_stor img {
+    height: 25px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu_item {
+    padding-right: 8px;
+  }
+  .menu_link {
+    font-size: 10px;
+  }
+  .subheader_logo img {
+    width: 100%;
+  }
+  .subheader_official {
+    font-size: 11px;
+  }
+  .subheader_phone {
+    font-size: 18px;
+  }
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  .promo_header {
+    font-size: 40px;
+  }
+  .promo_subheader {
+    font-size: 30px;
+  }
+  .benefits_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benefits_block .benefit_descr {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .menu_active {
+    left: 0;
+  }
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  .menu_link {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .promo_header {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  nav {
+    height: 30px;
+  }
+  nav .menu_link {
+    font-size: 10px;
+  }
+  header {
+    height: 30px;
+  }
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 11px;
+  }
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .subheader_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_header {
+    font-size: 30px;
+    padding: 0 23px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  .promo_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  .benefits {
+    padding-bottom: 0;
+  }
+  .benefits_block {
+    margin-top: 26px;
+  }
+  .benefits_block .benefit_descr {
+    width: 100%;
+  }
+  .benefits_img {
+    width: 100px;
+    height: 100px;
+  }
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  .mobile {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+  }
+  .mobile_item_subtitle {
+    font-size: 18px;
+    padding: 0 38px;
+  }
+  .mobile_item_pluse {
+    left: 127px;
+  }
+  .choice {
+    height: 320px;
+    min-height: 320px;
+  }
+  .choice_block_black {
+    padding-top: 24px;
+    height: 262px;
+  }
+  .choice_block_black .title, .choice_block_black .subtitle {
+    display: none;
+  }
+  .choice_car {
+    top: 79px;
+  }
+  .choice_car img {
+    width: 270px;
+  }
+  .choice_block_white {
+    padding-top: 0;
+    height: 100px;
+  }
+  .choice_block_white_descr {
+    color: #fff;
+    background-color: #070716;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 250px;
+    width: 290px;
+    height: 110px;
+    padding: 10px 20px 10px 20px;
+  }
+  .require {
+    padding-bottom: 5px;
+  }
+  .require_block {
+    margin-bottom: 0;
+  }
+  .require_title {
+    font-size: 20px;
+  }
+  .require_list {
+    margin-top: 2px;
+  }
+  .require_list li {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .world {
+    height: 360px;
+    min-height: 0;
+    padding: 22px 0;
+  }
+  .world .title {
+    margin-top: 15px;
+  }
+  .world .subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .world .world_citys {
+    margin-top: 210px;
+  }
+  .basement {
+    display: block;
+  }
+  .basement .links {
+    display: none;
+  }
+  .basement .linksMobil {
+    display: block;
+    margin-top: 14px;
+    width: 100%;
+  }
+  .basement .linksMobil .links_line {
+    width: 245px;
+    height: 4px;
+  }
+  .basement .linksMobil .links_ref {
+    margin-top: 16px;
+  }
+  .basement .linksMobil .links_ref .block_first {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .basement .linksMobil .links_ref .block_second {
+    font-size: 9px;
+    padding: 0 5px;
+  }
+  .basement .linksMobil .language {
+    text-align: center;
+    font-size: 15px;
+  }
+  .basement .icons, .basement .stors {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
