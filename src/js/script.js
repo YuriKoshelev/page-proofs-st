@@ -4,7 +4,7 @@ const start = document.querySelector('#start'),
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector(".hamburger");
     const menu = document.querySelector(".menu");
-    const itemsMenu = document.querySelectorAll(".menu_item")
+    const itemsMenu = document.querySelectorAll(".menu_item");
     
     const clickHamburger = () => {
         hamburger.classList.toggle('hamburger_active');
