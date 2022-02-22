@@ -5,16 +5,17 @@
 При верстке сайта использовались:
 
 - колоночная верстка bootstrap-grid  
-- препроцессорр SASS (миксины, переменные, псевдоэлементы)
+- препроцессор SASS (миксины, переменные, псевдоэлементы)
 - планировщик заданий Gulp
 - адаптация верстки по различные размеры экранов, используя медиа-запросы (@media)
+- написание кода на JavaScript для интерактивной части
 
-![View1](screenshots/view1.png "Демонстрация сайта")
+### Демонстрация
 
-![View2](screenshots/view2.png "Демонстрация сайта")
+#### Версия для ПК
 
-![View3](screenshots/view3.png "Демонстрация сайта")
+[![Watch the video](desktop.png)](https://youtu.be/vJWFaN9pSgQ)
 
-![View4](screenshots/view4.png "Демонстрация адаптации сайта")
+#### Мобильная версия
 
-![View5](screenshots/view5.png "Демонстрация адаптации сайта")
+[![Watch the video](mobil.png)](https://youtu.be/_LlVhp1G2H8)
