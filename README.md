@@ -1,4 +1,4 @@
-Ссылка на приложение: http://uber.ykoshelev.ru/
+Ссылка на сайт: http://uber.ykoshelev.ru/
 
 ### О чем проект
 
@@ -14,7 +14,7 @@
 
 
 
-Link to the application: http://uber.ykoshelev.ru/
+Link to the website: http://uber.ykoshelev.ru/
 
 ### What is the project about
 
