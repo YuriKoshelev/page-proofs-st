@@ -1,3 +1,19 @@
+Link to the website: http://uber.ykoshelev.ru/
+
+### What is the project about
+
+Uber website layout
+
+When making up the site , the following were used:
+
+- column layout of bootstrap-grid
+- SASS preprocessor (mixins, variables, pseudo-elements)
+- Gulp task scheduler
+- adaptation of the layout for different screen sizes using media queries (@media)
+- writing JavaScript code for the interactive part
+
+
+
 Ссылка на сайт: http://uber.ykoshelev.ru/
 
 ### О чем проект
@@ -14,27 +30,12 @@
 
 
 
-Link to the website: http://uber.ykoshelev.ru/
+### Demonstration / Демонстрация
 
-### What is the project about
-
-Uber website layout
-
-When making up the site , the following were used:
-
-- column layout of bootstrap-grid
-- SASS preprocessor (mixins, variables, pseudo-elements)
-- Gulp task scheduler
-- adaptation of the layout for different screen sizes using media queries (@media)
-- writing JavaScript code for the interactive part
-
-
-### Демонстрация / Demonstration
-
-#### Версия для ПК / PC version
+#### PC version / Версия для ПК 
 
 [![Watch the video](desktop.png)](https://youtu.be/vJWFaN9pSgQ)
 
-#### Мобильная версия / Mobile version
+#### Mobile version / Мобильная версия
 
 [![Watch the video](mobil.png)](https://youtu.be/_LlVhp1G2H8)
